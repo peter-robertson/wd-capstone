@@ -14,15 +14,18 @@ header{
   padding-top: 45px;
 }
 
-h1{
+/*main{
+  text-align: center;
+}*/
+
+.peter{
   font-weight: 700;
   font-size: 34px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h2{
   font-weight: 700;
-
 }
 
 p{
@@ -34,12 +37,13 @@ ul{
   max-width: 250px;
   list-style-type: none;
   line-height: 30px;
-  margin-bottom: 35px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 li{
   display: inline;
-  margin: 0 5px 0 5px;
+  margin: 0 5px;
   letter-spacing: 5px;
 }
 
@@ -59,27 +63,37 @@ a:hover{
   height: 100%;
 }
 
+.flex__boxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .box{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 255px;
+  max-width: 80%;
   height: 100px;
-  margin: 0 auto;
   margin-bottom: 20px;
-  transition:  background-color .5s, color .5s;
+  transition:  background-color 0.5s, color 0.5s;
   font-weight: 700;
 }
 
 .box-red{
   background-color: #FE5C4F;
+  /*background-image:
+  linear-gradient(#FE5C4F, #9D3931);*/
 }
 
 .box-red:hover{
   background-color: #D5473C;
-  color: #fff;
   /*background-image:
-  linear-gradient(#FE5C4F, #9D3931);*/
+  linear-gradient(#FE5C4F, #000);*/
+  color: #fff;
 }
 
 .box-black{
@@ -93,7 +107,7 @@ a:hover{
 
 .box-blue{
   background-color: #00A8B9;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .box-blue:hover{
@@ -106,10 +120,67 @@ a:hover{
   color: #fff;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*tablet */
 @media (min-width: 600px) {
+
+header{
+  padding-top: 60px;
+}
+
+.peter{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+ul{
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+li{
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.box{
+  width: 528px;
+  height: 180px;
+  margin-bottom: 30px;
+}
+
+.flex__boxes{
+  font-size: 40px;
+}
+
+.connect{
+  font-size: 24px;
+}
+
+.box-blue{
+  margin-bottom: 60px;
+}
+
 }
 
 /* desktop */
 @media (min-width: 1140px) {
+
+  .box{
+    width: 300px;
+    height: 390px;
+    margin: 0 15px 60px 15px;
+  }
+
+  .flex__boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
