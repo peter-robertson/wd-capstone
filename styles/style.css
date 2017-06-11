@@ -1,8 +1,7 @@
 body{
-  background-color: #fff;
+  background-color: #eee;
   font-family: 'Rajdhani';
   font-weight: 400;
-  font-size: 22px;
   text-align: center;
 }
 
@@ -14,6 +13,9 @@ header{
   padding-top: 45px;
 }
 
+img{
+  max-width: 80%;
+}
 /*main{
   text-align: center;
 }*/
@@ -24,21 +26,33 @@ header{
   margin-bottom: 10px;
 }
 
+h1{
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
 h2{
+  font-size: 18px;
+  line-height: 20px;
   font-weight: 700;
+  margin: 10px 0;
 }
 
 p{
   font-size: 18px;
-  line-height: 22px;
+  line-height: 20px;
+  margin: 10px 0 20px 0;
 }
 
 ul{
   max-width: 250px;
   list-style-type: none;
-  line-height: 30px;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 36px;
 }
 
 li{
@@ -52,16 +66,10 @@ a{
   color: #000;
 }
 
-a:hover{
+/*a:hover{
   text-decoration: none;
   color: #FE5C4F;
-}
-
-.page-border{
-  margin: 15px;
-  background-color: #f5f5f5;
-  height: 100%;
-}
+}*/
 
 .flex__boxes{
   display: flex;
@@ -85,6 +93,8 @@ a:hover{
 
 .box-red{
   background-color: #FE5C4F;
+  color: #A53C34;
+  margin-top: 10px;
   /*background-image:
   linear-gradient(#FE5C4F, #9D3931);*/
 }
@@ -98,6 +108,7 @@ a:hover{
 
 .box-black{
   background-color: #666;
+  color: #333;
 }
 
 .box-black:hover{
@@ -107,6 +118,7 @@ a:hover{
 
 .box-blue{
   background-color: #00A8B9;
+  color: #018593;
   margin-bottom: 30px;
 }
 
@@ -118,6 +130,71 @@ a:hover{
 .box-blue:hover{
   background-color: #018C9A;
   color: #fff;
+}
+
+/*.portfolio__darker{
+  background-color: #ddd;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}*/
+
+section{
+  background-color: #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.horizontal__rule{
+  margin: 0 auto;
+  width: 80%;
+  background: #666;
+  height: 1px;
+  margin-bottom: 30px;
+}
+
+.portfolio__item{
+
+}
+
+.artwork{
+
+}
+
+.description{
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  text-align: center;
+  max-width: 85%;
+}
+
+.round-button {
+	width: 35px;
+  display: inline-block;
+  margin: 20px 3px 10px 3px;
+}
+
+.round-button-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	width: 100%;
+  height: 35px;
+  border-radius: 50%;
+  border:1px solid #FE5C4F;
+}
+
+.round-button-circle:hover{
+  background-color: #FE5C4F;
+}
+
+.round-type {
+	text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 footer{
