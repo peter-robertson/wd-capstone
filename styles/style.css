@@ -29,7 +29,7 @@ img{
 }
 
 .peter_photo{
-  margin: 25px auto;
+  margin: 30px auto;
   height: 355px;
   width: 270px;
   max-width: 90%;
@@ -125,7 +125,8 @@ a:hover{
   justify-content: center;
 }
 
-/* Home Page Colored Boxes */
+/* Home Page Colored Circles */
+
 .center{
   display: flex;
   flex-direction: column;
@@ -234,6 +235,33 @@ a:hover{
   max-width: 85%;
 }
 
+/* Round button on index page */
+
+.round_button_black {
+	width: 50px;
+  display: inline-block;
+  margin: 5px 0 30px 0;
+}
+
+.round_button_circle_black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  border:1px solid #000;
+}
+
+/*.bounce{
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}*/
+
+/*Round button for portfolio pages */
 .round-button {
 	width: 35px;
   display: inline-block;
