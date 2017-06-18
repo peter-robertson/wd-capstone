@@ -1,5 +1,5 @@
 body{
-  background-color: #eee;
+  background-color: #fff;
   font-family: 'Rajdhani';
   font-weight: 400;
   text-align: center;
@@ -16,9 +16,11 @@ header{
 img{
   max-width: 80%;
 }
-/*main{
-  text-align: center;
-}*/
+
+.page_border{
+  margin: 15px;
+  background: #eee;
+}
 
 .peter{
   font-weight: 700;
@@ -26,39 +28,84 @@ img{
   margin-bottom: 10px;
 }
 
+.peter_photo{
+  margin: 25px auto;
+  height: 355px;
+  width: 270px;
+  max-width: 90%;
+  background-image: url("../images/peter_grey.jpg");
+  background-blend-mode: multiply;
+  background-color: #00A8B9;
+  background-size: 146%;
+  background-position: -63px -60px;
+  background-repeat: no-repeat;
+  color: #fff;
+  /*font-size: 36px;
+  line-height: 36px;*/
+  position: relative;
+}
+
+.art_head{
+  margin: 10px 0;
+}
+
+.art_subhead{
+  margin: 10px 0;
+}
+
+.art_description{
+  margin: 10px 0 0 0;
+}
+
 h1{
   font-size: 34px;
   line-height: 34px;
   font-weight: 300;
-  margin: 10px 0;
+}
+
+.peter_photo h1{
+  position: absolute;
+  text-align: left;
+  top: 275px;
+  left: 20px;
 }
 
 h2{
   font-size: 18px;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: 700;
-  margin: 10px 0;
+}
+
+.work_area h2{
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.intro{
+  margin: 0 auto;
+  width: 250px;
+  font-size: 26px;
+  line-height: 32px;
 }
 
 p{
   font-size: 18px;
-  line-height: 20px;
-  margin: 10px 0 20px 0;
+  line-height: 22px;
 }
 
 ul{
   max-width: 250px;
   list-style-type: none;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 10px;
 }
 
 li{
   display: inline;
   margin: 0 5px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 a{
@@ -66,97 +113,116 @@ a{
   color: #000;
 }
 
-/*a:hover{
-  text-decoration: none;
+a:hover{
+  text-decoration: underline;
   color: #FE5C4F;
-}*/
+}
 
-.flex__boxes{
+.flex_circles{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.box{
+/* Home Page Colored Boxes */
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 255px;
   max-width: 80%;
-  height: 100px;
+  height: 170px;
+  width: 170px;
+  border-radius: 85px;
+  margin-top: 10px;
   margin-bottom: 20px;
   transition:  background-color 0.5s, color 0.5s;
   font-weight: 700;
 }
 
-.box-red{
+.circle_red{
   background-color: #FE5C4F;
   color: #A53C34;
-  margin-top: 10px;
+  margin-top: 20px;
   /*background-image:
   linear-gradient(#FE5C4F, #9D3931);*/
 }
 
-.box-red:hover{
+.circle_red:hover{
   background-color: #D5473C;
   /*background-image:
   linear-gradient(#FE5C4F, #000);*/
   color: #fff;
 }
 
-.box-black{
+.circle_black{
   background-color: #666;
   color: #333;
 }
 
-.box-black:hover{
+.circle_black:hover{
   background-color: #000;
   color: #fff;
 }
 
-.box-blue{
+.circle_blue{
   background-color: #00A8B9;
   color: #018593;
   margin-bottom: 30px;
 }
 
-.box-blue:hover{
+.circle_blue:hover{
   background-color: #000;
   color: #fff;
 }
 
-.box-blue:hover{
+.circle_blue:hover{
   background-color: #018C9A;
   color: #fff;
 }
 
-/*.portfolio__darker{
-  background-color: #ddd;
-  padding-top: 40px;
-  padding-bottom: 10px;
-}*/
+.area{
+  width: 225px;
+}
 
-section{
+/* Portfolio image and text Groupings */
+
+.portfolio{
   background-color: #eee;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.horizontal__rule{
-  margin: 0 auto;
-  width: 80%;
-  background: #666;
+.horizontal_rule_box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.horizontal_rule{
+  margin: 30px 0 25px 0;
   height: 1px;
-  margin-bottom: 30px;
+  background: #666;
 }
 
-.portfolio__item{
-
+.art_rule{
+  margin: 30px 0 25px 0;
+  width: 85%;
 }
 
-.artwork{
+.work_rule{
+  width: 50%;
+}
+
+.artwork {
 
 }
 
@@ -203,27 +269,19 @@ footer{
   align-items: center;
 }
 
-/*tablet */
+/* TABLET */
+
 @media (min-width: 600px) {
 
 header{
   padding-top: 60px;
 }
 
-.peter{
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-ul{
+img{
   max-width: 100%;
-  margin-bottom: 50px;
 }
 
-li{
-  margin: 0 10px;
-  font-size: 24px;
-}
+/* Home Page Colored Boxes */
 
 .box{
   width: 528px;
@@ -235,12 +293,74 @@ li{
   font-size: 40px;
 }
 
-.connect{
+.box-blue{
+  margin-bottom: 60px;
+}
+
+.peter{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* Portfolio image and text Groupings */
+
+.portfolio{
+
+}
+
+.artwork{
+  width: 315px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.description{
+  display: inline-block;
+  width: 300px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.horizontal_rule{
+  /*width: 645px;*/
+  margin: 30px 0 35px 0;
+}
+
+.art_head{
+  font-size: 54px;
+  line-height: 48px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.art_subhead{
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.art_description{
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  margin: 10px 0 20px 0;
+}
+
+/* Navigation */
+
+ul{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+li{
+  margin: 0 10px;
   font-size: 24px;
 }
 
-.box-blue{
-  margin-bottom: 60px;
+.connect{
+  font-size: 24px;
 }
 
 }
