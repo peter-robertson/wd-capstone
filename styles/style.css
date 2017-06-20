@@ -22,17 +22,20 @@ img{
   background: #eee;
 }
 
-.peter{
+h1{
   font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 10px;
+  /*font-size: 34px;*/
+  font-size: 9.5vw;
+  margin-bottom: 15px;
+  max-width: 80%;
 }
 
 .peter_photo{
   margin: 30px auto;
   height: 355px;
-  width: 270px;
-  max-width: 90%;
+  /*width: 270px;*/
+  width: 70vw;
+  max-width: 80%;
   background-image: url("../images/peter_grey.jpg");
   background-blend-mode: multiply;
   background-color: #00A8B9;
@@ -57,49 +60,52 @@ img{
   margin: 10px 0 0 0;
 }
 
-h1{
-  font-size: 34px;
-  line-height: 34px;
-  font-weight: 300;
-}
-
-.peter_photo h1{
+h2{
+  font-size: 36px;
+  line-height: 36px;
   position: absolute;
   text-align: left;
-  top: 275px;
+  top: 270px;
   left: 20px;
 }
 
-h2{
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-}
-
-.work_area h2{
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.intro{
+h3 {
   margin: 0 auto;
   width: 250px;
   font-size: 26px;
   line-height: 32px;
 }
 
-p{
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+h6{
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 ul{
   max-width: 250px;
   list-style-type: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 22px;
-  line-height: 10px;
+  /*margin-top: 10px;
+  margin-bottom: 10px;*/
+  font-size: 24px;
+  line-height: 32px;
 }
 
 li{
@@ -139,7 +145,6 @@ a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 255px;
   max-width: 80%;
   height: 170px;
   width: 170px;
@@ -254,14 +259,26 @@ a:hover{
   border:1px solid #000;
 }
 
-/*.bounce{
+.bounce {
   animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
   -o-animation: bounce 2s infinite;
-}*/
+}
 
-/*Round button for portfolio pages */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Round button for portfolio pages */
 .round-button {
 	width: 35px;
   display: inline-block;
@@ -280,6 +297,7 @@ a:hover{
 
 .round-button-circle:hover{
   background-color: #FE5C4F;
+  color: #fff;
 }
 
 .round-type {
@@ -307,6 +325,15 @@ header{
 
 img{
   max-width: 100%;
+}
+
+ul{
+  display: inline;
+}
+
+.nav_combine{
+  display: flex;
+  align-items: center;
 }
 
 /* Home Page Colored Boxes */
@@ -354,7 +381,7 @@ img{
   margin: 30px 0 35px 0;
 }
 
-.art_head{
+h5{
   font-size: 54px;
   line-height: 48px;
   text-align: left;
