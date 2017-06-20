@@ -36,6 +36,7 @@ h1{
   /*width: 270px;*/
   width: 70vw;
   max-width: 80%;
+  max-height: 55vh;
   background-image: url("../images/peter_grey.jpg");
   background-blend-mode: multiply;
   background-color: #00A8B9;
@@ -65,7 +66,7 @@ h2{
   line-height: 36px;
   position: absolute;
   text-align: left;
-  top: 270px;
+  bottom: 15px;
   left: 20px;
 }
 
