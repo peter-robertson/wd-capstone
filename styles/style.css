@@ -87,12 +87,14 @@ h5{
   font-size: 34px;
   line-height: 34px;
   font-weight: 300;
+  margin-top: 7px;
 }
 
 h6{
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 p {
@@ -153,27 +155,28 @@ a:hover{
   margin-top: 10px;
   margin-bottom: 20px;
   transition:  background-color 0.5s, color 0.5s;
+  font-size: 40px;
   font-weight: 700;
 }
 
 .circle_red{
   background-color: #FE5C4F;
-  color: #A53C34;
+  color: #000;
   margin-top: 20px;
-  /*background-image:
-  linear-gradient(#FE5C4F, #9D3931);*/
+  background-repeat: no-repeat;
+  background-position: center;
+  /*letter-spacing: 3px;*/
+  background-size: 75%;
+  background-image: url("../images/home_mobile.png");
 }
 
 .circle_red:hover{
-  background-color: #D5473C;
-  /*background-image:
-  linear-gradient(#FE5C4F, #000);*/
+  background-color: #9F362D;
   color: #fff;
 }
 
 .circle_black{
   background-color: #666;
-  color: #333;
 }
 
 .circle_black:hover{
@@ -183,18 +186,11 @@ a:hover{
 
 .circle_blue{
   background-color: #00A8B9;
-  color: #018593;
   margin-bottom: 30px;
 }
 
 .circle_blue:hover{
-  background-color: #000;
-  color: #fff;
-}
-
-.circle_blue:hover{
-  background-color: #018C9A;
-  color: #fff;
+  background-color: #016872;
 }
 
 .area{
@@ -215,7 +211,7 @@ a:hover{
 }
 
 .horizontal_rule{
-  margin: 30px 0 25px 0;
+  margin: 25px 0 30px 0;
   height: 1px;
   background: #666;
 }
@@ -265,6 +261,8 @@ a:hover{
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
   -o-animation: bounce 2s infinite;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 @keyframes bounce {
@@ -272,10 +270,10 @@ a:hover{
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-8px);
+    transform: translateY(-15px);
   }
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
 
@@ -314,6 +312,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 /* TABLET */
@@ -417,6 +416,8 @@ li{
 
 .connect{
   font-size: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 }
@@ -436,4 +437,26 @@ li{
     align-items: center;
     justify-content: center;
   }
+}
+
+/* Hidden preloading div */
+
+@media screen {
+	div#preloader {
+		position: absolute;
+		left: -9999px;
+		top:  -9999px;
+}
+
+div#preloader img {
+  display: block;
+	}
+}
+
+@media print {
+	div#preloader,
+	div#preloader img {
+		visibility: hidden;
+		display: none;
+		}
 }
