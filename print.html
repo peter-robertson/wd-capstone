@@ -15,23 +15,29 @@
 
     <div class="page_border">
 
-    <header>
-    <h1>PETER ROBERTSON</h1>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-    </ul>
-    <ul>
-      <li><a href="digital.html">DIGITAL</a></li>
-      <li><a href="ui.html">UI</a></li>
-      <li><a href="print.html">PRINT</a></li>
-    </ul>
-    </header>
+      <header>
+        <h1 class="my_name">PETER ROBERTSON</h1>
+        <section class="nav_combine">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+          </ul>
+          <ul>
+            <li><a href="digital.html">DIGITAL</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="print.html">PRINT</a></li>
+          </ul>
+        </section>
+      </header>
 
     <main>
 
       <div id="preloader">
-	       <img src="images/print_kelloggs2.jpg" width="1" height="1" />
-	       <img src="images/print_kelloggs3.jpg" width="1" height="1" />
+	       <img src="images/print_kelloggs2.jpg" width="1" height="1">
+	       <img src="images/print_kelloggs3.jpg" width="1" height="1">
+         <img src="images/print_ecco2.jpg" width="1" height="1">
+         <img src="images/print_thnstick2.jpg" width="1" height="1">
+         <img src="images/print_thnstick3.jpg" width="1" height="1">
+         <img src="images/print_wolfblass2.jpg" width="1" height="1">
       </div>
 
       <div class="horizontal_rule_box">
@@ -40,39 +46,33 @@
 
       <section class="portfolio">
 
-        <div class="artwork" id="image1">
-          <img src="images/print_kelloggs1.jpg" border="0" alt="Kellogg's">
+        <div class="artwork cl_art">
+          <img id="kelloggs" src="images/print_kelloggs1.jpg" border="0" alt="Kellogg's">
         </div>
 
         <div class="description">
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('kelloggs').src='images/print_kelloggs1.jpg'">
             <div class="round-type">1</div>
             </div>
           </div>
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('kelloggs').src='images/print_kelloggs2.jpg'">
             <div class="round-type">2</div>
             </div>
           </div>
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('kelloggs').src='images/print_kelloggs3.jpg'">
             <div class="round-type">3</div>
             </div>
           </div>
 
-          <div class="round-button">
-            <div class="round-button-circle">
-            <div class="round-type">4</div>
-            </div>
-          </div>
-
-          <h5>Start Something Fabulous</h5>
-          <h6>CLIENT: Kellogg’s Special K / Multiple Magazine Titles</h6>
-          <p class="art_description">A year-long campaign for Special K kicked off with a contest, continued with advertorials and wrapped up with winners revealed in magazine.</p>
+          <h5 class="art_head">Start Something Fabulous</h5>
+          <h6 class="art_subhead">CLIENT: Kellogg’s Special K / Multiple Magazine Titles</h6>
+          <p class="art_description">A year-long campaign for Special K kicked off with a contest, continued with advertorials and wrapped up with contest winners revealed in magazine.</p>
 
         </div>
 
@@ -84,39 +84,135 @@
 
       <section class="portfolio">
 
-        <div class="artwork" id="image2">
-          <img src="images/print_kelloggs1.jpg">
+        <div class="artwork cl_art">
+          <img id="thnstick" src="images/print_thnstick1.jpg">
         </div>
 
         <div class="description">
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('thnstick').src='images/print_thnstick1.jpg'">
             <div class="round-type">1</div>
             </div>
           </div>
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('thnstick').src='images/print_thnstick2.jpg'">
             <div class="round-type">2</div>
             </div>
           </div>
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('thnstick').src='images/print_thnstick3.jpg'">
             <div class="round-type">3</div>
             </div>
           </div>
 
+          <h5 class="art_head">Stick Buyer’s Guide</h5>
+          <h6 class="art_subhead">CLIENT: The Hockey News / Various</h6>
+          <p class="art_description">Advertiser-sponsored magazine section introduced manufacturers' new products to readers in a friendly editorial environment.</p>
+
+        </div>
+
+      </section>
+
+      <div class="horizontal_rule_box">
+        <div class="horizontal_rule work_rule"></div>
+      </div>
+
+      <section class="portfolio">
+
+        <div class="artwork cl_art">
+          <img src="images/print_sorel.jpg">
+        </div>
+
+        <div class="description">
+          <h5 class="art_head">Sorel Tivoli II</h5>
+          <h6 class="art_subhead">CLIENT: ELLE Canada / Sorel</h6>
+          <p class="art_description">Fall advertorial highlighted the features of the new Tivoli II boot and was designed to appeal to the fashion-conscious ELLE Canada reader.</p>
+
+        </div>
+
+      </section>
+
+      <div class="horizontal_rule_box">
+        <div class="horizontal_rule work_rule"></div>
+      </div>
+
+      <section class="portfolio">
+
+        <div class="artwork cl_art">
+          <img src="images/print_johnfrieda.jpg">
+        </div>
+
+        <div class="description">
+          <h5 class="art_head">John Frieda Luxurious Volume</h5>
+          <h6 class="art_subhead">CLIENT: ELLE Canada / KAO Brands</h6>
+          <p class="art_description">KAO Brands supplied photography and requested a how-to advertorial to engage the ELLE Canada reader with step-by-step hair-styling tips.</p>
+
+        </div>
+
+      </section>
+
+      <div class="horizontal_rule_box">
+        <div class="horizontal_rule work_rule"></div>
+      </div>
+
+      <section class="portfolio">
+
+        <div class="artwork sah_art">
+          <img id="wolfblass" src="images/print_wolfblass1.jpg" border="0" alt="Wolfblass">
+        </div>
+
+        <div class="description">
+
           <div class="round-button">
-            <div class="round-button-circle">
-            <div class="round-type">4</div>
+            <div class="round-button-circle" onclick="document.getElementById('wolfblass').src='images/print_wolfblass1.jpg'">
+            <div class="round-type">1</div>
             </div>
           </div>
 
-          <h5>Start Something Fabulous</h5>
-          <h6>CLIENT: Kellogg’s Special K / Multiple Magazine Titles</h6>
-          <p class="art_description">A year-long campaign for Special K kicked off with a contest, continued with advertorials and wrapped up with winners revealed in magazine.</p>
+          <div class="round-button">
+            <div class="round-button-circle" onclick="document.getElementById('wolfblass').src='images/print_wolfblass2.jpg'">
+            <div class="round-type">2</div>
+            </div>
+          </div>
+
+          <h5 class="art_head">Wolf Blass Yellow Label</h5>
+          <h6 class="art_subhead">CLIENT: Style at Home / Wolf Blass Yellow Label Wines</h6>
+          <p class="art_description">Mockups for a proposed Wolf Blass advertorial featuring a premium look and a Style at Home wine editor partnership.</p>
+
+        </div>
+
+      </section>
+
+      <div class="horizontal_rule_box">
+        <div class="horizontal_rule work_rule"></div>
+      </div>
+
+      <section class="portfolio">
+
+        <div class="artwork sah_art">
+          <img id="ecco" src="images/print_ecco1.jpg" border="0" alt="ECCO Shoes">
+        </div>
+
+        <div class="description">
+
+          <div class="round-button">
+            <div class="round-button-circle" onclick="document.getElementById('ecco').src='images/print_ecco1.jpg'">
+            <div class="round-type">1</div>
+            </div>
+          </div>
+
+          <div class="round-button">
+            <div class="round-button-circle" onclick="document.getElementById('ecco').src='images/print_ecco2.jpg'">
+            <div class="round-type">2</div>
+            </div>
+          </div>
+
+          <h5 class="art_head">Style Inspired by Ecco</h5>
+          <h6 class="art_subhead">CLIENT: Style at Home / Ecco Shoes</h6>
+          <p class="art_description">Advertorial series for Ecco Shoes compared the client’s elegantly-designed footware with equally elegant styles of home decor.</p>
 
         </div>
 

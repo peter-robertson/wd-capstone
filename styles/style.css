@@ -19,29 +19,31 @@ img{
 
 .page_border{
   margin: 15px;
-  background: #eee;
+  background: #ddd;
 }
 
-h1{
+h1 {
   font-weight: 700;
-  /*font-size: 34px;*/
+}
+
+.my_name{
   font-size: 9.5vw;
   margin-bottom: 15px;
   max-width: 80%;
 }
 
 .peter_photo{
-  margin: 30px auto;
+  margin: 5px auto;
   height: 355px;
   /*width: 270px;*/
   width: 70vw;
   max-width: 80%;
   max-height: 55vh;
-  background-image: url("../images/peter_grey.jpg");
+  background-image: url("../images/peter_new_grey.jpg");
   background-blend-mode: multiply;
   background-color: #00A8B9;
-  background-size: 146%;
-  background-position: -63px -60px;
+  background-size: 160%;
+  background-position: center -25px;
   background-repeat: no-repeat;
   color: #fff;
   /*font-size: 36px;
@@ -49,32 +51,33 @@ h1{
   position: relative;
 }
 
+h3 {
+  margin-top: 30px;
+  width: 250px;
+  font-size: 26px;
+  line-height: 32px;
+}
+
 .art_head{
   margin: 10px 0;
 }
 
-.art_subhead{
-  margin: 10px 0;
-}
+/*.art_subhead{
+  margin: 10px 0 0 0;
+}*/
 
 .art_description{
   margin: 10px 0 0 0;
 }
 
-h2{
-  font-size: 36px;
-  line-height: 36px;
+.photo_type{
+  font-size: 26px;
+  line-height: 30px;
   position: absolute;
   text-align: left;
   bottom: 15px;
   left: 20px;
-}
-
-h3 {
-  margin: 0 auto;
-  width: 250px;
-  font-size: 26px;
-  line-height: 32px;
+  max-width: 85%;
 }
 
 h4 {
@@ -84,22 +87,37 @@ h4 {
 }
 
 h5{
+  font-weight: 300;
+}
+
+.art_head{
   font-size: 34px;
   line-height: 34px;
-  font-weight: 300;
   margin-top: 7px;
 }
 
 h6{
+  font-weight: 700;
+}
+
+.art_subhead{
   font-size: 18px;
   line-height: 22px;
-  font-weight: 700;
   margin-top: 10px;
 }
 
 p {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+p a{
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 ul{
@@ -152,45 +170,52 @@ a:hover{
   height: 170px;
   width: 170px;
   border-radius: 85px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 20px;
-  transition:  background-color 0.5s, color 0.5s;
+  /*transition:  background-color 0.5s, color 0.5s;*/
   font-size: 40px;
   font-weight: 700;
 }
 
 .circle_red{
   background-color: #FE5C4F;
-  color: #000;
-  margin-top: 20px;
+  /*margin-top: 10px;*/
   background-repeat: no-repeat;
   background-position: center;
-  /*letter-spacing: 3px;*/
-  background-size: 75%;
-  background-image: url("../images/home_mobile.png");
+  background-size: 100%;
+  background-image: url("../images/icon_digital.png");
 }
 
 .circle_red:hover{
   background-color: #9F362D;
-  color: #fff;
+  background-image: url("../images/icon_digital_hover.png");
 }
 
 .circle_black{
   background-color: #666;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("../images/icon_print.png");
 }
 
 .circle_black:hover{
   background-color: #000;
-  color: #fff;
+  background-image: url("../images/icon_print_hover.png");
 }
 
 .circle_blue{
   background-color: #00A8B9;
-  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("../images/icon_ui.png");
+  /*margin-bottom: 30px;*/
 }
 
 .circle_blue:hover{
   background-color: #016872;
+  background-image: url("../images/icon_ui_hover.png");
 }
 
 .area{
@@ -199,11 +224,10 @@ a:hover{
 
 /* Portfolio image and text Groupings */
 
-.portfolio{
-  background-color: #eee;
+/*.portfolio{
   padding-top: 10px;
   padding-bottom: 10px;
-}
+}*/
 
 .horizontal_rule_box{
   display: flex;
@@ -216,25 +240,35 @@ a:hover{
   background: #666;
 }
 
-.art_rule{
+/*.art_rule{
   margin: 30px 0 25px 0;
   width: 85%;
-}
+}*/
 
 .work_rule{
-  width: 50%;
+  width: 75%;
 }
 
 .artwork {
+  margin-bottom: 20px;
+}
 
+.artwork_padded{
+  padding: 10px 0;
 }
 
 .description{
   display: inline-block;
   vertical-align: middle;
-  width: 90%;
   text-align: center;
-  max-width: 85%;
+  max-width: 80%;
+}
+
+.description_stacked{
+  margin: 0 auto;
+  vertical-align: middle;
+  max-width: 80%;
+  text-align: center;
 }
 
 /* Round button on index page */
@@ -256,16 +290,16 @@ a:hover{
   border:1px solid #000;
 }
 
-.bounce {
+/*.bounce {
   animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
   -o-animation: bounce 2s infinite;
   margin-top: 10px;
   margin-bottom: 20px;
-}
+}*/
 
-@keyframes bounce {
+/*@keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
@@ -275,13 +309,13 @@ a:hover{
   60% {
     transform: translateY(-10px);
   }
-}
+}*/
 
 /* Round button for portfolio pages */
 .round-button {
 	width: 35px;
   display: inline-block;
-  margin: 20px 3px 10px 3px;
+  margin: 0 6px 10px 6px;
 }
 
 .round-button-circle {
@@ -331,12 +365,64 @@ ul{
   display: inline;
 }
 
+.intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.my_name{
+  font-size: 50px;
+}
+
+.horizontal_rule{
+  margin: 50px 0 50px 0;
+  height: 1px;
+  background: #666;
+}
+
+/*.bounce{
+  visibility: hidden;
+}*/
+
 .nav_combine{
   display: flex;
   align-items: center;
 }
 
-/* Home Page Colored Boxes */
+.peter_photo{
+  display: inline-block;
+  margin: 0 auto;
+  height: 430px;
+  width: 400px;
+  background-image: url("../images/peter_new_grey.jpg");
+  background-blend-mode: multiply;
+  background-color: #00A8B9;
+  background-size: 100%;
+  background-position: center -25px;
+  background-repeat: no-repeat;
+  color: #fff;
+  /*font-size: 36px;
+  line-height: 36px;*/
+  position: relative;
+}
+
+.photo_type{
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: left;
+  bottom: 15px;
+  left: 20px;
+  max-width: 85%;
+}
+
+.peter_description {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+/* Home Page Colored Circles */
 
 .box{
   width: 528px;
@@ -344,12 +430,34 @@ ul{
   margin-bottom: 30px;
 }
 
-.flex__boxes{
+/*.flex__boxes{
   font-size: 40px;
+}*/
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.box-blue{
-  margin-bottom: 60px;
+/*.work_area{
+  /*margin: 0 auto;
+  font-size: 20px;
+  line-height: 23px;
+  width: 200px;*/
+  /*text-align: center;*/
+  /*padding-left: 20px;*/
+  /*text-align: left;*/
+  /*margin: 10px 0;*/
+/*}*/
+
+.area{
+  width: 400px;
+  font-size: 22px;
+  line-height: 26px;
+  /*text-align: left;*/
+  margin: 10px 0 0 0;
 }
 
 .peter{
@@ -359,47 +467,72 @@ ul{
 
 /* Portfolio image and text Groupings */
 
-.portfolio{
-
-}
-
 .artwork{
-  width: 315px;
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.artwork_padded{
+  padding: 20px 0;
+}
+
+.cl_art{
+  width: 315px;;
+}
+
+.sah_art{
+  width: 347px;
+}
+
+.mobile_art{
+  width: 280px;
+}
+
+.inhershoes{
+  width: 550px;
+}
+
+.tablet{
+  width: 330px;
+}
+
+.wallpaper{
+  width: 400px;
 }
 
 .description{
   display: inline-block;
-  width: 300px;
+  width: 280px;
   margin-left: 30px;
   text-align: left;
 }
 
-.horizontal_rule{
-  /*width: 645px;*/
-  margin: 30px 0 35px 0;
+.description_stacked{
+  text-align: center;
+  margin-top: 30px;
+  width: 620px;
 }
 
-h5{
-  font-size: 54px;
+.art_head{
+  font-size: 50px;
   line-height: 48px;
-  text-align: left;
-  margin: 10px 0;
+  /*text-align: left;*/
+  margin: 10px 0 0 0;
 }
 
 .art_subhead{
   font-size: 20px;
   line-height: 23px;
-  text-align: left;
-  margin: 10px 0;
+  /*text-align: left;*/
+  margin: 10px 0 0 0;
 }
 
 .art_description{
   font-size: 20px;
   line-height: 23px;
-  text-align: left;
-  margin: 10px 0 20px 0;
+  /*text-align: left;*/
+  margin: 10px 0 0 0;
 }
 
 /* Navigation */
@@ -422,7 +555,7 @@ li{
 
 }
 
-/* desktop */
+/* DESKTOP */
 @media (min-width: 1140px) {
 
   .box{

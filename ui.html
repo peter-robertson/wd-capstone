@@ -15,77 +15,111 @@
 
     <div class="page_border">
 
-    <header>
-    <div class="peter">PETER ROBERTSON</div>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-    </ul>
-    <ul>
-      <li><a href="digital.html">DIGITAL</a></li>
-      <li><a href="ui.html">UI</a></li>
-      <li><a href="print.html">PRINT</a></li>
-    </ul>
-    </header>
+      <header>
+        <h1 class="my_name">PETER ROBERTSON</h1>
+        <section class="nav_combine">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+          </ul>
+          <ul>
+            <li><a href="digital.html">DIGITAL</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="print.html">PRINT</a></li>
+          </ul>
+        </section>
+      </header>
 
     <main>
 
+      <div id="preloader">
+	       <img src="images/ui_p2_logo.jpg" width="1" height="1" />
+	       <img src="images/ui_p1_2.jpg" width="1" height="1" />
+      </div>
+
       <div class="horizontal_rule_box">
-        <div class="horizontal_rule"></div>
+        <div class="horizontal_rule work_rule"></div>
       </div>
 
       <section class="portfolio">
 
-        <div class="artwork" id="image1">
-          <img src="images/6.png">
+        <div class="artwork mobile_art">
+          <img id="p2" src="images/ui_p2_logo.jpg" border="0" alt="all-athletics.com">
         </div>
 
         <div class="description">
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('p2').src='images/ui_p2_logo.jpg'">
             <div class="round-type">1</div>
             </div>
           </div>
 
           <div class="round-button">
-            <div class="round-button-circle">
+            <div class="round-button-circle" onclick="document.getElementById('p2').src='images/ui_p2_mobile.jpg'">
             <div class="round-type">2</div>
             </div>
           </div>
 
-          <div class="round-button">
-            <div class="round-button-circle">
-            <div class="round-type">3</div>
-            </div>
-          </div>
-
-          <div class="round-button">
-            <div class="round-button-circle">
-            <div class="round-type">4</div>
-            </div>
-          </div>
-
-          <div class="art_head">The '6 Recycles</div>
-          <div class="art_subhead">PROJECT: Recycling App for the City of Toronto</div>
-          <div class="art_description">App designed to help Toronto residents find out what, when, where and how to recycle and dispose of their recyclables.</div>
+          <h5 class="art_head">all-athletics landing page</h5>
+          <h6 class="art_subhead">PROJECT: UI design for mobile, tablet and desktop landing pages.</h6>
+          <p class="art_description">A more inviting UI design was needed for this stats-heavy website. Click on the following links to view the InVision prototypes.</p>
+          <p class="art_description"><a href="https://invis.io/HJCADFFSD#/240334643_iPhone_7" target="_blank">Mobile</a>
+          <br><a href="https://invis.io/ATCAEENGN#/240352171_iPad" target="_blank">Tablet</a>
+          <br><a href="https://invis.io/68CAEDGGP#/240356717_Desktop" target="_blank">Desktop</a></p>
 
         </div>
 
       </section>
 
       <div class="horizontal_rule_box">
-        <div class="horizontal_rule"></div>
+        <div class="horizontal_rule work_rule"></div>
       </div>
 
+      <section class="portfolio">
+
+        <div class="artwork mobile_art">
+          <img id="p1" src="images/ui_p1_1.jpg">
+        </div>
+
+        <div class="description">
+
+          <div class="round-button">
+            <div class="round-button-circle" onclick="document.getElementById('p1').src='images/ui_p1_1.jpg'">
+            <div class="round-type">1</div>
+            </div>
+          </div>
+
+          <div class="round-button">
+            <div class="round-button-circle" onclick="document.getElementById('p1').src='images/ui_p1_2.jpg'">
+            <div class="round-type">2</div>
+            </div>
+          </div>
+
+          <div class="round-button">
+            <div class="round-button-circle" onclick="document.getElementById('p1').src='images/ui_p1_3.jpg'">
+            <div class="round-type">3</div>
+            </div>
+          </div>
+
+          <h5 class="art_head">The '6 Recycles</h5>
+          <h6 class="art_subhead">Project: UI Design for a City of Toronto Recycling App</h6>
+          <p class="art_description">UI design for an app to help Toronto residents find out what, when, where and how to recycle.</p>
+          <p class="art_description">Click on the following link to view the InVision prototype.</p>
+          <p class="art_description"><a href="https://invis.io/M6BRKF0KT#/234259773_iPhone_7" target="_blank">Mobile app</a></p>
+
+        </div>
+
+      </section>
+
       <div class="horizontal_rule_box">
-        <div class="horizontal_rule"></div>
+        <div class="horizontal_rule work_rule"></div>
       </div>
 
     </main>
 
     <footer>
 
-      <div class="connect">CONNECT</div>
+      <h4>CONNECT</h4>
       <ul>
         <li><a href="mailto:peter_robertson@rocketmail.com"><i class="fa fa-envelope"></i></a></li>
         <li><a href="https://www.linkedin.com/in/peter-m-robertson/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -93,7 +127,10 @@
       </ul>
 
     </footer>
+
   </div>
+
+  <script src="script/script.js"></script>
 
   </body>
 </html>
